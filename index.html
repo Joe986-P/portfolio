@@ -59,6 +59,16 @@
         .btn { display: inline-block; background-color: var(--accent-color); color: #0f172a; font-weight: bold; padding: 12px 24px; text-decoration: none; border-radius: 6px; margin: 10px; transition: transform 0.2s; }
         .btn:hover { transform: translateY(-2px); }
         .btn-alt { background-color: transparent; color: var(--accent-color); border: 2px solid var(--accent-color); }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* This cuts the image into a perfect circle */
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
     </style>
     <link rel="stylesheet" href="https://cloudflare.com">
 
@@ -67,7 +77,9 @@
 
 <div class="container">
     <header>
-        <h1>Joe Paul Sidenya 🚀</h1>
+            <header>
+        <img src="profile.jpg" alt="Joe Paul Sidenya" class="profile-pic">
+ <h1>Joe Paul Sidenya 🚀</h1>
         <div class="subtitle">Computer Science & Software Engineering Student</div>
         <p class="bio">Passionate about writing clean code, configuring secure networks, engineering data-driven solutions, and carrying out data analysis as I pursue my first degree in computer science.</p>
     </header>
